@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--|Meta Config.|-->
+    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="BF Saúde">
+    <meta name="author" content="Unilatem">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--|Meta Config.|-->
+
+    <!--|Title Tab|-->
+    <title>BF Saúde | Termos de Uso</title>
+    <!--|Title Tab|-->
+
+    <!--|CSS Inside|-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos.css">
+    <script src="aos.js"></script>
+    <!--|CSS Inside|-->
+
+    <!--|Script Header and Footer Import|-->
+		<script>
+      fetch("header.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("header").innerHTML = data;
+        });
+      fetch("footer.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("footer").innerHTML = data;
+        });
+    </script>
+    <!--|Script Header and Footer Import|-->
+  </head>
+  <body>
+    <section>
+      <!--|Header|-->
+      <header></header>
+      <!--|Header|-->
+
+      <!--|Main|-->
+      <main>
+        <section id="sectm">
+          <h1 class="tttm">Termos de Uso<img class="imtm" src="images/terms.svg"></img></h1>
+          <div class="dvtm">
+            <p class="txtm">
+              Bem-vindo a BF Consultoria Soluções Aeronáuticas! Ao acessar e utilizar nosso site, você concorda em cumprir com os seguintes termos e condições:
+              <br><br>
+              1. Uso do Site: A BF Consultoria Soluções Aeronáuticas é destinada para uso comercial e empresarial. Você concorda em utilizar o site apenas para os fins previstos no contexto de atividades comerciais.
+              <br><br>
+              2. Conteúdo do Usuário: Ao contribuir com conteúdo para a BF Consultoria Soluções Aeronáuticas, você concede permissão para que esse conteúdo seja utilizado pela plataforma de acordo com nossos termos, principalmente no âmbito comercial.
+              <br><br>
+              3. Privacidade: Respeitamos a sua privacidade. Leia nossa política de privacidade para entender como suas informações são coletadas, utilizadas e protegidas.
+              <br><br>
+              4. Propriedade Intelectual: Todo o conteúdo presente na BF Consultoria Soluções Aeronáuticas, incluindo textos, imagens, vídeos e logotipos, é protegido por direitos autorais e propriedade intelectual, especialmente no contexto de uso comercial.
+              <br><br>
+              5. Limitação de Responsabilidade: A BF Consultoria Soluções Aeronáuticas não se responsabiliza por danos diretos, indiretos, incidentais, especiais ou consequenciais resultantes do uso ou incapacidade de usar nosso site no contexto comercial.
+              <br><br>
+              6. Alterações nos Termos: Reservamos o direito de modificar estes termos a qualquer momento. Recomendamos que você revise periodicamente os termos de uso.
+              <br><br>
+              Ao continuar a usar o site da BF Consultoria Soluções Aeronáuticas, você concorda com estes termos e condições. Se tiver alguma dúvida sobre os termos de uso, entre em contato conosco.
+            </p>
+          </div>
+        </section>
+      </main>
+      <!--|Main|-->
+
+      <!--|Footer|-->
+      <footer></footer>
+      <!--|Footer|-->
+
+      <!--|Script|-->
+      <script rel="text/javascript" src="script.js"></script>
+      <!--|Script|-->
+    </section>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--|Meta Config.|-->
+    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="BF Saúde">
+    <meta name="author" content="Unilatem">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--|Meta Config.|-->
+
+    <!--|Title Tab|-->
+    <title>BF Saúde | Sobre Nós</title>
+    <!--|Title Tab|-->
+
+    <!--|CSS e Script Inside|-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos.css">
+    <script rel="text/javascript" src="script.js"></script>
+    <script rel="text/javascript" src="aos.js"></script>
+    <!--|CSS e Script Inside|-->
+
+    <!--|Script Header and Footer Import|-->
+		<script>
+      fetch("header.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("header").innerHTML = data;
+        });
+      fetch("footer.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("footer").innerHTML = data;
+        });
+    </script>
+    <!--|Script Header and Footer Import|-->
+
+    <!--|Animation|-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init();
+    });
+    </script>
+    <!--|Animation|-->
+  </head>
+  <body>
+    <section>
+      <!--|Header|-->
+      <header></header>
+      <!--|Header|-->
+
+      <!--|Main|-->
+      <main>
+        <section id="sec5">
+          <h1 class="tt7" data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out">SOBRE A BF SAÚDE<img class="im6" src="images/cross.svg"></h1>
+          <div class="dv10">
+            <img class="im7" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" src="images/1.jpg">
+            <p class="tx4" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">A BF Saúde surge em um cenário onde muitas empresas do setor priorizam o lucro em detrimento do cuidado e suporte aos clientes. Com uma visão diferenciada, a BF Saúde busca preencher essa lacuna, colocando o bem-estar e a satisfação dos clientes no centro de suas operações.<br><br>Nossa equipe está empenhada em oferecer planos de saúde que atendam às necessidades individuais de cada cliente, proporcionando suporte e atendimento de excelência em todos os momentos.<br><br>Acreditamos que a melhoria no setor de planos de saúde é essencial para garantir que as pessoas recebam o cuidado e a atenção que merecem.<br><br>Com um histórico novo, mas com uma determinação sólida, a BF Saúde está comprometida em trazer inovação, transparência e qualidade para o mercado de planos de saúde. Estamos animados para embarcar nessa jornada e fazer o nosso melhor para nossos clientes.<br><br>Se precisar de mais informações sobre nossos serviços ou tiver alguma dúvida, não hesite em entrar em contato. Estamos aqui para oferecer o melhor para você e sua saúde.</p>
+          </div>
+        </section>
+      </main>
+      <!--|Main|-->
+
+      <!--|Footer|-->
+      <footer></footer>
+      <!--|Footer|-->
+    </section>
+  </body>
+</html>

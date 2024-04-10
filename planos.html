@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--|Meta Config.|-->
+    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="BF Saúde">
+    <meta name="author" content="Unilatem">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--|Meta Config.|-->
+
+    <!--|Title Tab|-->
+    <title>BF Saúde | Planos</title>
+    <!--|Title Tab|-->
+
+    <!--|CSS Inside|-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos.css">
+    <script src="aos.js"></script>
+    <!--|CSS Inside|-->
+
+    <!--|Script Header and Footer Import|-->
+		<script>
+      fetch("header.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("header").innerHTML = data;
+        });
+      fetch("footer.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("footer").innerHTML = data;
+        });
+    </script>
+    <!--|Script Header and Footer Import|-->
+
+    <!--|Animation|-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init();
+    });
+    </script>
+    <!--|Animation|-->
+  </head>
+  <body>
+    <section>
+      <!--|Header|-->
+      <header></header>
+      <!--|Header|-->
+
+      <!--|Main|-->
+      <main>
+        <section id="sec6">
+          <h1 class="tt8">Planos de Saúde</h1>
+          <div class="dv11">
+            <div class="dv12">
+              <div class="dv13">
+                <img class="im8" src="images/2.jpg">
+              </div>
+              <div class="dv13">
+                <h1>Planos Simples</h1>
+                <p</p>
+              </div>
+            </div>
+            <div class="dv12">
+              <div class="dv13">
+                <h1></h1>
+                <p></p>
+              </div>
+              <div class="dv13">
+                <img class="im8" src="images/2.jpg">
+              </div>
+            </div>
+            <div class="dv12">
+              <div class="dv13">
+                <img class="im8" src="images/2.jpg">
+              </div>
+              <div class="dv13">
+                <h1></h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </main>
+      <!--|Main|-->
+
+      <!--|Footer|-->
+      <footer></footer>
+      <!--|Footer|-->
+
+      <!--|Script|-->
+      <script rel="text/javascript" src="script.js"></script>
+      <!--|Script|-->
+    </section>
+  </body>
+</html>
