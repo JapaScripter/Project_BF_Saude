@@ -1,15 +1,20 @@
 /*|Header Parallax|*/
-var header = document.getElementById('hd');
-
-window.addEventListener ('scroll', function() 
-{
-  if (window.scrollY > 0) {
-    header.style.background = '#474998';
+document.addEventListener('DOMContentLoaded', function() {
+  let header = document.getElementById('hd');
+  
+  if (header) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 0) {
+        header.style.background = '#474998';
+      } else {
+        header.style.background = 'none';
+      }
+    });
   }
   else {
-    header.style.background = 'none';
+    console.log("Eu não achei o elemento 'hd'");
   }
-})
+});
 /*|Header Parallax|*/
 
 /*--|Mobile Menu|--*/
@@ -31,3 +36,20 @@ function toggleoffMenu(){
   }
 }
 /*--|Mobile Menu|--*/
+
+/*--|Carroussel Hero|--*/
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval( function(){
+  nextImage();
+},1000000)
+
+function nextImage(){
+  count++
+  if(count>3){
+    count = 1;
+  }
+  document.getElementById("radio"+count).checked =true;
+}
+/*--|Carroussel Hero|--*/
