@@ -1,39 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <!--|Meta Config.|-->
+    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="BF Saúde">
+    <meta name="author" content="Unilatem">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <!--|Meta Config.|-->
+
+    <!--|Title Tab|-->
+    <title>BF Saúde</title>
+    <!--|Title Tab|-->
+
     <!--|CSS|-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="aos.css">
+    <link href="aos.css" rel="stylesheet">
+    <link href="pagamento.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <!--|CSS|-->
-</head>
+
+    <!--|Script Mercado Pago|-->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <!--|Script Mercado Pago|-->
+
+    <!--|Script Header and Footer Import|-->
+		<script>
+      fetch("../header.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("header").innerHTML = data;
+        });
+      fetch("../footer.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("footer").innerHTML = data;
+        });
+    </script>
+    <!--|Script Header and Footer Import|-->
+
+    <!--|Animation|-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init();
+    });
+    </script>
+    <!--|Animation|-->
+  </head>
 <body>
-    <form id="paymentForm">
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email-address" required />
+  <!--|Header|-->
+  <header></header>
+  <!--|Header|-->
+
+  <!--|Form|-->
+  <main>
+    <section id="form">
+      <img class="imbk" src="images/background.png">
+      <h1 class="ttpy">Contrate Nossos Planos</h1>
+      <div class="dvfm">
+        <div class="dvfg">
+          <!-- <div class="form-group">
+            <label for="last-name">Sobrenome</label>
+            <input type="num" id="CPF" required oninput="formatarCPF(this)" maxlength="14" placeholder="Digite seu CPF"/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email-address" required placeholder="Digite o email"/>
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="tel" id="amount" required oninput="formatarMoeda(this)" placeholder="Digite o valor"/>
+          </div>
+          <div class="form-group">
+            <label for="first-name">Nome</label>
+            <input type="text" id="first-name" required placeholder="Digite seu nome"/>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Sobrenome</label>
+            <input type="text" id="last-name" required placeholder="Digite seu sobrenome"/>
+          </div> -->
+          <div class="form-submit">
+            <button>Pagamento</button>
+            <!-- <button id="checkout-btn">Pagamento</button> -->
+            <!-- <div id="wallet_container"></div> -->
+          </div>
         </div>
-        <div class="form-group">
-          <label for="amount">Amount</label>
-          <input type="tel" id="amount" required />
-        </div>
-        <div class="form-group">
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name" />
-        </div>
-        <div class="form-group">
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" />
-        </div>
-        <div class="form-submit">
-          <button type="submit" onclick="payWithPaystack()"> Pay </button>
-        </div>
-      </form>
-      
-      <script src="https://js.paystack.co/v1/inline.js"></script> 
-      
+      </div>
+      <img class="imbk0" src="images/background.png">
+    </section>
+  </main>
+  <!--|Form|-->
+
+  <!--|Footer|-->
+  <footer></footer>
+  <!--|Footer|-->
+
+  <!--|Script|-->
+  <script src="pagamento.js" rel="text/javascript"></script>
+  <script src="aos.js" rel="text/javascript"></script>
+  <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="1273324264-f92cada3-65b7-4a53-a55b-af7cfb015eb6" data-source="button"></script>
+  <!--|Script|-->
 </body>
 </html>
