@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="pt-BR">
+
+<head>
     <!--|Meta Config.|-->
-    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="description" content="BF Saúde">
     <meta name="author" content="Unilatem">
@@ -15,34 +17,14 @@
 
     <!--|CSS|-->
     <link href="style.css" rel="stylesheet">
-    <link href="aos.css" rel="stylesheet">
     <!--|CSS|-->
 
     <!--|Script Header and Footer Import|-->
-		<script>
-      fetch("header.html")
-        .then(response => {
-          return response.text()
-        })
-        .then(data => {
-          document.querySelector("header").innerHTML = data;
-        });
-      fetch("footer.html")
-        .then(response => {
-          return response.text()
-        })
-        .then(data => {
-          document.querySelector("footer").innerHTML = data;
-        });
-    </script>
+		<script>fetch("header.html").then((e=>e.text())).then((e=>{document.querySelector("header").innerHTML=e})),fetch("footer.html").then((e=>e.text())).then((e=>{document.querySelector("footer").innerHTML=e}));</script>
     <!--|Script Header and Footer Import|-->
 
     <!--|Animation|-->
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      AOS.init();
-    });
-    </script>
+    <script>document.addEventListener("DOMContentLoaded",(function(){AOS.init()}));</script>
     <!--|Animation|-->
   </head>
   <body>
@@ -51,46 +33,7 @@
       <header></header>
       <!--|Header|-->
 
-      <!--|Main|-->
-      <main>
-        <section id="sec6">
-          <h1 class="tt8" data-aos="flip-down" data-aos-duration="1500" data-aos-easing="ease-in-out">Planos de Saúde</h1>
-          <div class="dv11">
-            <div class="dv12" data-aos="flip-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
-              <div class="dv13">
-                <img class="im8" src="images/2.jpg">
-              </div>
-              <div class="dv13">
-                <h1 class="tt9">Plano Simples<br>(Individual, Casal ou Familiar)</h1>
-                <p class="tx9">Nosso plano de saúde individual, casal ou familiar oferece uma cobertura abrangente para atender às suas necessidades. Com uma ampla rede de profissionais e hospitais credenciados, você terá acesso a cuidados de qualidade quando precisar. Proteja-se e cuide da sua família com um plano que prioriza a sua saúde e bem-estar.</p>
-                <a class="lk2" href="pagamento.html">Faça Sua Familia Feliz</a>
-              </div>
-            </div>
-            <div class="dv12" data-aos="flip-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
-              <div class="dv13">
-                <h1 class="tt9">Plano Corporativo Plus<br>(Plano Empresarial)</h1>
-                <p class="tx9">Apresentamos o plano corporativo Plus, uma solução abrangente para empresas de todos os tamanhos. Oferecendo cobertura completa e benefícios exclusivos, nosso plano é projetado para atender às necessidades de pequenas, médias e grandes empresas. Priorize a saúde dos seus colaboradores com um plano que valoriza o bem-estar e a produtividade da sua equipe.</p>
-                <a class="lk2" href="pagamento.html">Faça Sua Equipe Produtiva</a>
-              </div>
-              <div class="dv13">
-                <img class="im8" src="images/3.jpg">
-              </div>
-            </div>
-            <div class="dv12" data-aos="flip-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
-              <div class="dv13">
-                <img class="im8" src="images/4.jpg">
-              </div>
-              <div class="dv13">
-                <h1 class="tt9">Plano Odontológico Versátil</h1>
-                <p class="tx9">Descubra o nosso plano odontológico versátil, projetado para atender a diversas necessidades. Seja você um indivíduo, casal, família ou empresa, nosso plano oferece acesso a serviços odontológicos de qualidade, proporcionando sorrisos saudáveis e cuidados completos. Invista na saúde bucal com um plano que prioriza o seu bem-estar.</p>
-                <a class="lk2" href="pagamento.html">Sorria Sem Medo</a>
-              </div>
-            </div>
-          </div>
-
-        </section>
-      </main>
-      <!--|Main|-->
+      <main><section id="sec6"><h1 class="tt8" data-aos="flip-down" data-aos-duration="1500" data-aos-easing="ease-in-out">Planos de Saúde</h1><div class="dv11"><div class="dv12" data-aos="flip-up" data-aos-duration="1500" data-aos-easing="ease-in-out"><div class="dv13"><img class="im8" src="images/2.webp" alt="familia"></div><div class="dv13"><h1 class="tt9">Plano Simples<br>(Individual, Casal ou Familiar)</h1><p class="tx9">Nosso plano de saúde individual, casal ou familiar oferece uma cobertura abrangente para atender às suas necessidades. Com uma ampla rede de profissionais e hospitais credenciados, você terá acesso a cuidados de qualidade quando precisar. Proteja-se e cuide da sua família com um plano que prioriza a sua saúde e bem-estar.</p><a class="lk2" href="https://api.whatsapp.com/send?phone=5511944525403&text=Olá%2C%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos!">Faça Sua Familia Feliz</a></div></div><div class="dv12" data-aos="flip-up" data-aos-duration="1500" data-aos-easing="ease-in-out"><div class="dv13"><h1 class="tt9">Plano Corporativo Plus<br>(Plano Empresarial)</h1><p class="tx9">Apresentamos o plano corporativo Plus, uma solução abrangente para empresas de todos os tamanhos. Oferecendo cobertura completa e benefícios exclusivos, nosso plano é projetado para atender às necessidades de pequenas, médias e grandes empresas. Priorize a saúde dos seus colaboradores com um plano que valoriza o bem-estar e a produtividade da sua equipe.</p><a class="lk2" href="https://api.whatsapp.com/send?phone=5511944525403&text=Olá%2C%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos!">Faça Sua Equipe Produtiva</a></div><div class="dv13"><img class="im8" src="images/3.webp" alt="empresa"></div></div><div class="dv12" data-aos="flip-up" data-aos-duration="1500" data-aos-easing="ease-in-out"><div class="dv13"><img class="im8" src="images/4.webp" alt="odontologico"></div><div class="dv13"><h1 class="tt9">Plano Odontológico Versátil</h1><p class="tx9">Descubra o nosso plano odontológico versátil, projetado para atender a diversas necessidades. Seja você um indivíduo, casal, família ou empresa, nosso plano oferece acesso a serviços odontológicos de qualidade, proporcionando sorrisos saudáveis e cuidados completos. Invista na saúde bucal com um plano que prioriza o seu bem-estar.</p><a class="lk2" href="https://api.whatsapp.com/send?phone=5511944525403&text=Olá%2C%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos!">Sorria Sem Medo</a></div></div></div></section></main>
 
       <!--|Footer|-->
       <footer></footer>
@@ -98,7 +41,6 @@
 
       <!--|Script|-->
       <script src="script.js" rel="text/javascript"></script>
-      <script src="aos.js" rel="text/javascript"></script>
       <!--|Script|-->
     </section>
   </body>

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="pt-BR">
+
+<head>
     <!--|Meta Config.|-->
-    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="description" content="BF Saúde">
     <meta name="author" content="Unilatem">
@@ -13,28 +15,12 @@
     <title>BF Saúde | Politica de Privacidade</title>
     <!--|Title Tab|-->
 
-   <!--|CSS|-->
-   <link href="style.css" rel="stylesheet">
-   <link href="aos.css" rel="stylesheet">
-   <!--|CSS|-->
+    <!--|CSS|-->
+    <link href="style.css" rel="stylesheet">
+    <!--|CSS|-->
 
     <!--|Script Header and Footer Import|-->
-		<script>
-      fetch("header.html")
-        .then(response => {
-          return response.text()
-        })
-        .then(data => {
-          document.querySelector("header").innerHTML = data;
-        });
-      fetch("footer.html")
-        .then(response => {
-          return response.text()
-        })
-        .then(data => {
-          document.querySelector("footer").innerHTML = data;
-        });
-    </script>
+		<script>fetch("header.html").then((e=>e.text())).then((e=>{document.querySelector("header").innerHTML=e})),fetch("footer.html").then((e=>e.text())).then((e=>{document.querySelector("footer").innerHTML=e}));</script>
     <!--|Script Header and Footer Import|-->
   </head>
   <body>
@@ -43,32 +29,7 @@
       <header></header>
       <!--|Header|-->
 
-      <!--|Main|-->
-      <main>
-        <section id="secpl">
-          <h1 class="ttpl">Politica de Privacidade<img class="impl" src="images/politicy.svg"></h1>
-          <div class="dvpl">
-            <p class="txpl">
-              A sua privacidade é importante para nós.
-              <br><br>
-              É política da BF Consultoria Soluções Aeronáuticas é respeitar a sua privacidade em relação a qualquer informação que possamos coletar enquanto operamos nosso site.
-              <br><br>
-              Solicitamos informações pessoalmente identificáveis apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.
-              <br><br>
-              Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis para evitar perda e roubo, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.
-              <br><br>
-              Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.
-              <br><br>
-              O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas políticas de privacidade.
-              <br><br>
-              Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.
-              <br><br>
-              O uso continuado do nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contato conosco.
-            </p>
-          </div>
-        </section>
-      </main>
-      <!--|Main|-->
+      <main><section id="secpl"><h1 class="ttpl">Politica de Privacidade<img class="impl" src="images/politicy.svg" alt="politica"></h1><div class="dvpl"><p class="txpl">A sua privacidade é importante para nós.<br><br>É política da BF Saúde é respeitar a sua privacidade em relação a qualquer informação que possamos coletar enquanto operamos nosso site.<br><br>Solicitamos informações pessoalmente identificáveis apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.<br><br>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis para evitar perda e roubo, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.<br><br>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.<br><br>O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas políticas de privacidade.<br><br>Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.<br><br>O uso continuado do nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contato conosco.</p></div></section></main>
 
       <!--|Footer|-->
       <footer></footer>
@@ -76,7 +37,6 @@
 
       <!--|Script|-->
       <script src="script.js" rel="text/javascript"></script>
-      <script src="aos.js" rel="text/javascript"></script>
       <!--|Script|-->
     </section>
   </body>
