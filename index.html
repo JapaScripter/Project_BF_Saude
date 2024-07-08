@@ -16,7 +16,7 @@
     <!--|Title Tab|-->
 
     <!--|CSS|-->
-    <link href="style.css" rel="stylesheet">
+    <link href="style_min.css" rel="stylesheet">
     <!--|CSS|-->
 
     <!--|Script Header and Footer Import|-->
@@ -42,7 +42,7 @@
       <!--|Script|-->
       <script src="script.js" rel="text/javascript"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script>$(document).ready((function(){var a=0,i=$(".slide"),e=i.length;function t(a){i.removeClass("active"),$(".slide:eq("+a+")").addClass("active"),$(".indicator").removeClass("active"),$('.indicator[data-slide="'+a+'"]').addClass("active")}$(".indicator").click((function(){var i=$(this).data("slide");t(i),a=i})),setInterval((function(){t(a=(a+1)%e)}),11e8)}));</script>
+      <script>$(document).ready((function(){var a=0,i=$(".slide"),e=i.length;function t(a){i.removeClass("active"),$(".slide:eq("+a+")").addClass("active"),$(".indicator").removeClass("active"),$('.indicator[data-slide="'+a+'"]').addClass("active")}$(".indicator").click((function(){var i=$(this).data("slide");t(i),a=i})),setInterval((function(){t(a=(a+1)%e)}),100000000)}));</script>
       <!--|Script|-->
     </section>
   </body>
