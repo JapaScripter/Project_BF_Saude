@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
   if (header) {
     window.addEventListener('scroll', function() {
       if (window.scrollY > 20) {
-        header.style.background = 'rgba(71, 73, 152, 0.8)';
+        header.style.background = 'rgba(12, 43, 64, 0.9)';
       } else {
-        header.style.background = '#474998';
+        header.style.background = 'transparent';
       }
     });
   }
