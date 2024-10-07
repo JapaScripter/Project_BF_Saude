@@ -315,7 +315,7 @@ overflow: hidden;
 font-size:2.5vw;
 font-weight:900;
 text-shadow:0 0 0.2vw #0D0D0D;
-color:#0fb8ce;
+color:#FFFFFF;
 padding:0 0 0 5vw;
 }
 .hexdv{
@@ -331,8 +331,8 @@ opacity:0.1;
 .tt0{
 font-size:2.5vw;
 font-weight:900;
-text-shadow:0 0 0.2vw #0D0D0D;
-color:#FFFFFF;
+text-shadow:0 0 0.2vw #FFFFFF;
+color:#0a2233;
 position:absolute;
 top:15vw;;
 left:5vw;
@@ -579,6 +579,7 @@ border-radius:2vw;
 }
 .ttsec3{
 font-family:'garet';
+font-size:1.5vw;
 font-weight: 300;
 color:#0fb8ce;
 }
